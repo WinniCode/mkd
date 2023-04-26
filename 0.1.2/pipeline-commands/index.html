@@ -9,17 +9,15 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../lab-doc2/">
       
-      
-        <link rel="next" href="../lab-doc2/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Lab Doc 1 - Crw</title>
+        <title>Pipeline commands - Crw</title>
       
     
     
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-doc-1" class="md-skip">
+        <a href="#pipeline-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab Doc 1
+              Pipeline commands
             
           </span>
         </div>
@@ -205,21 +203,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lab-doc1/" class="md-nav__link">
         Lab Doc 1
       </a>
-      
     </li>
   
 
@@ -245,11 +233,79 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pipeline-commands/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pipeline commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Pipeline commands
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-checklist" class="md-nav__link">
+    Project Checklist
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#novaseq-process" class="md-nav__link">
+    NovaSeq process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextseq-process" class="md-nav__link">
+    NextSeq process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-release-process" class="md-nav__link">
+    Data release process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -274,6 +330,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-checklist" class="md-nav__link">
+    Project Checklist
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#novaseq-process" class="md-nav__link">
+    NovaSeq process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextseq-process" class="md-nav__link">
+    NextSeq process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-release-process" class="md-nav__link">
+    Data release process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -287,8 +385,89 @@
                   
 
 
-<h1 id="lab-doc-1">Lab Doc 1</h1>
-<p>Some useful and interesting info.</p>
+<ul>
+<li>HTML5</li>
+<li>JavaScript</li>
+<li>CSS</li>
+</ul>
+<h1 id="pipeline-commands">Pipeline-Commands</h1>
+<p>This repo contains shell files with the pre-pipeline commands for GCTU pipelines:</p>
+<ul>
+<li>4 shell files for FastQC and RNAseq pipelines on both the NovaSeq and Nextseq</li>
+<li>1 shell file with the pre-pipeline commands for RNA Exome for NovaSeq.</li>
+<li>3 shell files for the 10x GEX, Multiome, and Visium pipelines.</li>
+</ul>
+<h2 id="project-checklist">Project Checklist</h2>
+<h3 id="novaseq-process">NovaSeq process</h3>
+<ul>
+<li>Check that bcl files have copied across from sequencer to kelvin in the DataIntensities folder. Ask lab to copy over if needed.</li>
+<li>Update the project tracker with the date and mark as 'Active - Data analysis'</li>
+<li>For 10X pipelines:</li>
+<li>
+<p>Run the revelant 10X pipeline by following the steps in the pipeline documentation.
+    &gt; Cells should be well clustered with plenty of reads and graph with characteristic 'cliff and knee' shape.</p>
+<blockquote>
+<p>The lab team should know whether the data is good/bad. If in doubt, refer to 10x website documentation and compare to previously released data where possible.
+- For FastQC and RNAseq pipelines:
+  - Generate FASTQ files by following steps in pipeline documentation.
+Ensure that there are no spaces in the sample sheet before running.</p>
+<p>FASTQ generation for NovaSeq S4 300 runs should be run in the lowpri partition with extra memory assigned, or else they will run out of time/memory.
+  - Check that the FASTQ files have generated properly (i.e. all files are full, close to the expected size).
+If it doesn't look normal then troubleshoot by looking at the sample sheet and the top unknown barcodes. Ask the lab team for help if needed.
+  - Run the relevant pipeline, refer to pipeline documentation.
+  - Check the QC results. Send to lab so they can confirm it.
+The lab team have been trained on multiQC so they know what to look out for.</p>
+<p>Most of the MultiQC metrics are explained if you hover your mouse over them. Use common sense here and consider what might be expected for the specific project based on the biology.</p>
+<p>One thing specifically for RNAseq - the Picard strand mapping should be mostly (&gt;90%) correct (blue) - if it is mostly incorrect (red) this indicates pipeline has been run with wrong strandedness.
+- Release data.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="nextseq-process">NextSeq process</h3>
+<ul>
+<li>Update the project tracker with the date and mark as 'Active - Data analysis'</li>
+<li>For 10X pipelines:</li>
+<li>
+<p>Run the revelant 10X pipeline by following the steps in the pipeline documentation.
+    &gt; Cells should be well clustered with plenty of reads and graph with characteristic 'cliff and knee' shape.</p>
+<blockquote>
+<p>The lab team should know whether the data is good/bad. If in doubt, refer to 10x website documentation and compare to previously released data where possible.
+- For FastQC and RNAseq pipelines:
+  - Check that the FASTQ files have generated properly (i.e. all files are full, close to the expected size).
+If it doesn't look normal then troubleshoot by looking at the sample sheet and the top unknown barcodes. Ask the lab team for help if needed.
+  - Run relevant the pipeline, refer to pipeline documentation.
+  - Check the QC results. Send to lab so they can confirm it.
+The lab team have been trained on multiQC so they know what to look out for.</p>
+<p>Most of the MultiQC metrics are explained if you hover your mouse over them. Use common sense here and consider what might be expected for the specific project based on the biology.</p>
+<p>One thing specifically for RNAseq - the Picard strand mapping should be mostly (&gt;90%) correct (blue) - if it is mostly incorrect (red) this indicates pipeline has been run with wrong strandedness.
+- Release data.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="data-release-process">Data release process</h3>
+<ul>
+<li>Copy the relevant files from kelvin onto the CrushFTP server.</li>
+<li>Make sure to delete logs and other irrelevant files from the copy on CrushFTP (don't delete the logs from kelvin!).</li>
+<li>Using the template, create a project summary form using the info on base space + the project quote. Save form as .pdf and .docx.<blockquote>
+<p>Project quote can be found on sharepoint at Projects &gt; PNXXXX &gt; PM</p>
+</blockquote>
+</li>
+<li>Add the PDF to the project folder on CrushFTP - Should now have (at least) 4 things in total:</li>
+<li>FASTQ folder with FASTQ files,</li>
+<li>folder with QC files,</li>
+<li>Sample sheet or Link-up csv/xlsx,</li>
+<li>and Project Summary PDF.</li>
+<li>Add project summary .pdf &amp; .docx + multiQC (3 things) to BIO folder on project sharepoint.<blockquote>
+<p>Create a BIO folder if one doesn't exist: Projects &gt; PNXXXX &gt; BIO</p>
+</blockquote>
+</li>
+<li>Create a CrushFTP account for the project, note the login details in a txt file.</li>
+<li>Using the template, create a release email, add CrushFTP login details to email.</li>
+<li>Attach project summary pdf.</li>
+<li>Address email to the customer and PI.</li>
+<li>CC in Genomics, yourself, and the relevant Lab person.</li>
+<li>Update the project tracker with the release date and mark project as 'Data Sent to Client'</li>
+</ul>
 
 
 
